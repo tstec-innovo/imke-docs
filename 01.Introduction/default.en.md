@@ -5,4 +5,5 @@ body_classes: title-center title-h1h2
 
 # iMKE Dokumentation
 
-Wilkommen!
+Most of our documentation is just in the progress of getting translated.
+Please refer to the [German](/de) documentation.
