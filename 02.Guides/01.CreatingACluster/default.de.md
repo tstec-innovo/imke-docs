@@ -78,10 +78,9 @@ wir den Namensgenerator. Die Anzahl und Größe der Server belassen wir auf den
 Standardwerten.
 ![Add Cluster Step 4](add_step4.png)
 
-Um später per SSH auf die Instanzen zuzugreifen, wählen wir Allocate Floating IP
-aus. Als Image entscheiden wir uns für Container Linux. Container Linux ist
-speziell für den Betrieb von Containern gedacht und wird durch iMKe automatisch
-aktualisiert.
+Als Image entscheiden wir uns für Container Linux. Container Linux ist
+speziell für den Betrieb von Containern gedacht und wird durch iMKe 
+automatisch aktualisiert.
 ![Add Cluster Step 5](add_step5.png)
 
 Für den SSH Zugriff müssen wir unseren Schlüssel hinterlegen. Dafür klicken wir auf
