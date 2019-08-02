@@ -53,10 +53,6 @@ Ordner. Der Dateiname setzt sich jetzt aus zwei Komponenten zusammen:
 * `kubeconfig-admin-`
 * unserer Cluster ID
 
-iMKE versucht hier so viel wie möglich bereit zu stellen. Unter anderem
-auch das Kommando um diese Datei nun zu konfigurieren. Dafür klicken wir
-auf `Connect` und in dem sich o
-
 Um diese dann zu registrieren nutzen wir folgendes Kommando:
 
 ```bash
