@@ -4,8 +4,8 @@ body_classes: title-center title-h1h2
 published: true
 ---
 
-Nachdem wir in iMKE nun einen Cluster angelegt haben wird
-es Zeit sich mit diesem zu verbinden. Dies ist notwendig um
+Nachdem wir in iMKE einen Cluster angelegt haben wird
+es Zeit, sich mit diesem zu verbinden. Das ist notwendig um
 Applikationen zu deployen und zu managen.
 
 *Wichtig: Die folgende Anleitung funktioniert nicht mit einer
@@ -14,39 +14,39 @@ Update installieren oder alternativ unser Webterminal nutzen!*
 
 ## Den Cluster finden
 
-Um einen Cluster zu löschen müssen wir in die Detailansicht
+Um einen Cluster zu finden, müssen wir in die Detailansicht
 des Clusters gehen.
 Hierfür klicken wir auf den Eintrag `first-system`.
 ![Step 1](connect_1.png)
 
 ## Die Zugangsdaten downloaden
 
-Nun klicken wir rechts oben auf `Connect` und im sich öffnenden
+Dann klicken wir rechts oben auf `Connect` und im sich öffnenden
 Fenster auf den nach unten gerichteten Pfeil.
 ![Step 2](connect_2.png)
 ![Step 2.2](connect_2_2.png)
 
-Damit downloaden wir eine Datei, die sich im Kubernetes-Slang
+Damit laden wir eine Datei herunter, die sich im Kubernetes-Umfeld
 `kubeconfig` nennt. In dieser Datei stehen alle Endpunkte,
 Zertifikate sowie Bereiche des Clusters. Mit dieser Datei ist
-`kubectl` dann in der Lage sich mit dem Cluster zu verbinden.
+`kubectl`  in der Lage, sich mit dem Cluster zu verbinden.
 
-Um diese Datei nun zu nutzen müssen wir diese auf der Konsole
+Um diese Datei zu nutzen, müssen wir sie auf der Konsole
 registrieren. Dafür gibt es zwei Möglichkeiten:
 
-1. `kubectl` schaut als Standart in die Datei `.kube/config`
+1. `kubectl` schaut als Standard in die Datei `.kube/config`
     im Heimat-Verzeichnis des Benutzers.
-2. wir können diese temporär mittels einer Umgebungsvariable
+2. Wir können die `kubeconfig` temporär mittels einer Umgebungsvariable
     exportieren.
 
-Der Einfachheit halber und um auf unserem System die Standarts
-nicht zu ersetzen gehen wir hier mit Variante 2.
+Der Einfachheit halber und um auf unserem System die Standards
+nicht zu verändern, gehen wir hier mit Variante 2.
 
-Dafür gehen wir jetzt in die Konsole. In den Screenshots verwende
+Dafür benutzen wir eine Konsole. In den Screenshots verwenden
 ich iTerm2 auf macOS, es funktioniert jedoch auf Linux und Windows
-bash ganz genau gleich.
+bash genau so.
 
-Als erstes müssen wir die herunter geladene Datei lokalisieren.
+Als erstes müssen wir die herunter geladene Datei finden.
 Chrome und Firefox laden diese beide normalerweise in den Downloads
 Ordner. Der Dateiname setzt sich jetzt aus zwei Komponenten zusammen:
 
@@ -64,7 +64,7 @@ cd Downloads
 export KUBECONFIG=$(pwd)/kubeconfig-admin-CLUSTERID
 ```
 
-Einfacher an dieses Kommando kommen wir wieder über das iMKE Webinterface.
+Dieses Kommando finden wir auch einfach im iMKE Webinterface.
 In dem Connect Fenster klicken wir hier einfach auf die ausgeschriebene
 Version und schon wird dies in unsere Zwischenablage kopiert.
 ![Step 3](connect_3.png)
@@ -98,15 +98,15 @@ auch auf das Dashboard. Einfach folgende URL im Browser öffnen:
 ![Step 4](connect_4.png)
 
 Beim Login lassen wir `Kubeconfig` ausgewaählt und bei
-`Choose kubeconfig file` selektieren wir die in den vorheerigen
+`Choose kubeconfig file` wählen wir die in den vorherigen
 Schritten herunter geladene Datei. Dann klicken wir auf `SIGN IN`.
 ![Step 5](connect_5.png)
 
-Nun sehen wir das Kubernetes Dashboard und können auch
-grafisch unser Cluster erkunden.
+Nun sehen wir das Kubernetes Dashboard und können
+ unseren Cluster grafisch erkunden.
 ![Step 6](connect_6.png)
 
-Sobald dies erledigt ist stoppen wir die Verbindung mit dem Cluster
+Wenn wir damit fertig sind, stoppen wir die Verbindung mit dem Cluster
 wieder durch Drücken von `Control-c`
 
 ## Zusammenfassung
@@ -117,5 +117,5 @@ Folgende Schritte wurden erfolgreich durchgeführt und gelernt:
 * Wie konfiguriere ich `kubectl` auf meinem Computer
 * Wie verbinde ich mich mit dem Kubernetes Dashboard
 
-Herzlichen Glückwunsch! Dies sind alle notwendigen Steps um sich
+Herzlichen Glückwunsch! Dies sind alle notwendigen Schritte, um sich
 mit einem Kubernetes Cluster zu verbinden.
