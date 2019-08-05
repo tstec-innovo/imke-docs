@@ -15,7 +15,7 @@ Software muss für jede Session neu installiert werden.
 
 ## Verbinden
 
-Um sich mit dem Web Terminal zu verbinden gehen wir in iMKE in das Cluster.
+Um sich mit dem Web Terminal zu verbinden gehen wir in iMKE in den Cluster.
 ![Step 1](terminal_1.png)
 
 Dort klicken wir nun auf `Open Web Terminal`.
@@ -26,13 +26,13 @@ dauern.
 ![Step 3](terminal_3.png)
 
 Sobald dies fertig ist können wir mit einem Klick auf `Open Web Terminal` das
-eigentliche Terminal öffnen.
+Web Terminal öffnen.
 ![Step 4](terminal_4.png)
 ![Step 5](terminal_5.png)
 
 ## Funktionen
 
-Das Web Terminal ist eine voll funktionale Linux Shell. Als Basis wird hier zsh
+Das Web Terminal ist eine voll funktionale Linux Shell. Als Basis wird zsh
 verwendet.
 
 Um die Administration von Kubernetes so einfach wie möglich zu machen
@@ -69,7 +69,7 @@ kubectl get pods --all-namespaces
 
 ## kubens
 
-Kubernetes bietet die Option Namespaces für die Applikationen
+Kubernetes bietet die Option, Namespaces für die Applikationen
 anzulegen. Diese sind mit dem Tool `kubens` sehr einfach zu
 wechseln. Als Beispiel hierfür werden wir einmal in die
 MachineDeployments schauen.
