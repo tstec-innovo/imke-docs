@@ -21,9 +21,28 @@ Dieses erfüllt die folgende Liste.
 
 ## Datentypen
 
+Kubernetes ist im Endeffekt eine große Datenbank. Alle Dinge
+die es betreibt speichert der api-server und dem entsprechend
+lassen sich Applikationen in Kubernetes auch betreiben.
+
 ### Deployment
 
+Der Datentyp `Deployment` kümmert sich darum, dass Applikationen
+in Kubernetes laufen und nach einigen Methoden wie bspw. Rolling
+geupdated werden können.
+
+Dieses müssen wir auch in unserem nginx Beispiel anlegen, damit
+Kubernetes uns das Docker Image nginx im Cluster platziert.
+
 ### Service
+
+Ein Service in Kubernetes ist eine Zusammenfassung diverser
+Container die im Cluster laufen. Das Matching passiert hier
+auf Basis von Labels, die wir an die Deployments hängen.
+
+Ein Service kann mehrere Typen haben. In unserem Beispiel
+wählen wir `LoadBalancer` damit unser Service von extern
+über eine fixe IP Adresse erreichbar ist.
 
 ## Manifeste
 
