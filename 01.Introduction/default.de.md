@@ -11,5 +11,6 @@ Cluster in der iNNOVO Cloud zu betreiben. Kunden können über ein
 und von der [Cloud Native Computing Foundation](https://cncf.io/ck)
 zertifizierte Cluster hochfahren und für Applikations-Deployments verwenden.
 
-Conformance Ergebnisse für unsere Plattform können jederzeit unter folgender
-URL eingesehen werden: [CNCF Kubernetes Conformance](https://github.com/cncf/k8s-conformance)
+Conformance Ergebnisse für unsere Plattform können jederzeit unter
+[CNCF Kubernetes Conformance](https://github.com/cncf/k8s-conformance) 
+eingesehen werden.
