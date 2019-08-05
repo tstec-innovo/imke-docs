@@ -4,50 +4,50 @@ body_classes: title-center title-h1h2
 published: true
 ---
 
-Das Cluster läuft und nun wollen wir eine Applikation
+Der Cluster läuft und wir wollen eine Applikation
 betreiben. Als Beispiel verwenden wir einen nginx, der
 per Load Balancer vor dem Cluster veröffentlicht wird.
 
-## Vorraussetzungen
+## Voraussetzungen
 
-Damit diese Anleitung funktioniert sind foldenge Dinge
-Vorraussetzung. Um die Vorbereitungszeit zu verkürzen
+Damit diese Anleitung funktioniert, sind foldenge Dinge
+Voraussetzung. Um die Vorbereitungszeit zu verkürzen,
 kann alternativ das iMKE Web Terminal verwendet werden.
-Dieses erfüllt die folgende Liste.
+Dieses erfüllt die Anforderungen aus der folgenden Liste.
 
 * `kubectl` in Version > `1.13`
-* ein laufendes Kubernetes Cluster
+* ein laufender Kubernetes Cluster
 * eine aktive `kubeconfig`
 
 ## Datentypen
 
 Kubernetes ist im Endeffekt eine große Datenbank. Alle Dinge
-die es betreibt speichert der api-server und dem entsprechend
+die es betreibt, speichert der api-server und dementsprechend
 lassen sich Applikationen in Kubernetes auch betreiben.
 
 ### Deployment
 
 Der Datentyp `Deployment` kümmert sich darum, dass Applikationen
-in Kubernetes laufen und nach einigen Methoden wie bspw. Rolling
-geupdated werden können.
+in Kubernetes laufen und nach einigen Methoden wie zum Beispiel _Rolling_
+aktualisiert werden können.
 
-Dieses müssen wir auch in unserem nginx Beispiel anlegen, damit
+Ein `Deployment` müssen wir auch in unserem nginx Beispiel anlegen, damit
 Kubernetes uns das Docker Image nginx im Cluster platziert.
 
 ### Service
 
 Ein Service in Kubernetes ist eine Zusammenfassung diverser
-Container die im Cluster laufen. Das Matching passiert hier
+Container die im Cluster laufen. Das Matching geschieht
 auf Basis von Labels, die wir an die Deployments hängen.
 
 Ein Service kann mehrere Typen haben. In unserem Beispiel
-wählen wir `LoadBalancer` damit unser Service von extern
-über eine fixe IP Adresse erreichbar ist.
+wählen wir `LoadBalancer`, damit unser Service von extern
+über eine öffentliche IP Adresse erreichbar ist.
 
 ## Manifeste
 
-Um nginx auf Kubernetes laufen zu lassen brauchen wir
-als erstes ein Objekt vom Typ `Deployment`. Dies lässt
+Um nginx auf Kubernetes laufen zu lassen, brauchen wir
+zunächst ein Objekt vom Typ `Deployment`. Dies lässt
 sich mittels `kubectl` leicht generieren.
 
 ```bash
@@ -79,7 +79,7 @@ spec:
 status: {}
 ```
 
-Dies sieht schon sehr gut aus. Dies speichern wir nun in eine Datei
+Das sieht schon sehr gut aus. Dies speichern wir nun in eine Datei
 deployment.yaml
 
 ```bash
@@ -89,7 +89,7 @@ kubectl create deployment --dry-run -o yaml --image nginx nginx > deployment.yam
 Als nächstes benötigen wir einen Service, der die Applikation von
 der Öffentlichkeit aus zugänglich macht. Als Typ wählen wir
 `LoadBalancer`, dies erstellt in OpenStack direkt einen fertig
-konfigurierten LoadBalancer als Einstieg in das Cluster.
+konfigurierten LoadBalancer als Einstieg in den Cluster.
 
 ```bash
 kubectl create service loadbalancer --dry-run --tcp=80 -o yaml nginx
@@ -120,7 +120,7 @@ Auch dies speichern wir nun wieder in eine Datei, dieses Mal `service.yaml`
 kubectl create service loadbalancer --dry-run --tcp=80 -o yaml nginx > service.yaml
 ```
 
-Diese zwei Dateien sind die Grundlage für ein öffentliches nginx in Kubernetes.
+Diese beiden Dateien sind die Grundlage für ein öffentliches nginx in Kubernetes.
 Zusammen gehören diese zwei Manifeste nicht. Die einzige Verbindung ist das Label
 `app: nginx`, welches das Deployment in den Metadaten und der Service als Selektor
 definiert hat. 
@@ -149,9 +149,9 @@ service/kubernetes   NodePort       10.10.10.1    <none>        443:31630/TCP   
 service/nginx        LoadBalancer   10.10.10.86   <pending>     80:31762/TCP    46s
 ```
 
-Wie ersichtlich wurde das Deployment angelegt und ist im Zustand READY.
+Wie wir in der Ausgabe sehen, wurde das Deployment angelegt und ist im Zustand READY.
 Der Service nginx wurde auch angelegt, die EXTERNAL-IP ist jedoch noch
-`pending`. Hier müssen wir nun ein bisschen warten bis der LoadBalancer
+`pending`. Hier müssen wir ein bisschen warten bis der LoadBalancer
 provisioniert wurde.
 
 Nach etwa 1-2 Minuten kann man das Kommando erneut ausführen und bekommt
@@ -187,8 +187,7 @@ NAME                 TYPE       CLUSTER-IP   EXTERNAL-IP   PORT(S)         AGE
 service/kubernetes   NodePort   10.10.10.1   <none>        443:31630/TCP   2d23h
 ```
 
-Wie man sieht ist alles wieder weg und im Browser aktualisieren wird auch
-einen Fehler anzeigen. Die Applikation läuft nicht mehr.
+Wie man sieht ist alles wieder weg und wenn man die IP-Adresse im Browser noch einmal aufruft, wird ein Fehler angezeigt: Die Applikation läuft nicht mehr.
 
 ## Zusammenfassung
 
