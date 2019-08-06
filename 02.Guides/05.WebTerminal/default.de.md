@@ -9,7 +9,7 @@ Kubernetes Clustern in der Cloud. Benötigt wird lediglich
 ein Browser. Da hier eine Shell über den Browser umgeleitet
 wird fällt auch ein offener Port `22` für SSH weg.
 
-Das Web Terminal wird bei jedem Neustart resetted. Auf dem
+Das Web Terminal wird bei jedem Neustart zurück gesetzt. Auf dem
 Dateisystem wird nichts behalten und auch nachträglich installierte
 Software muss für jede Session neu installiert werden.
 
