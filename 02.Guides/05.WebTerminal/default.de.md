@@ -84,3 +84,43 @@ Active namespace is "kube-system".
 NAME           AGE    DELETED   REPLICAS   AVAILABLEREPLICAS   PROVIDER    OS       VERSION
 musing-kalam   3d3h             3          3                   openstack   coreos   1.15.0
 ```
+
+## k9s
+
+Als Alternative zum Kubernetes Dashboard wünschten sich viele
+Nutzer von Kubernetes eine grafische Version von `kubectl`.
+Aus diesem Bedürfnis ist `k9s` entstanden. Als Konsolen-Tool
+visualisiert es einem Ressourcen im Cluster, genau wie `htop`
+für Systemlast.
+![k9s](k9s.png)
+
+Beenden lässt sich `k9s` mittels `Ctrl-c`
+
+## stern
+
+Sobald man Kopien von Containern im Cluster betreibt wünscht man
+sich schnell die Möglichkeit Logs von allen gleichzeitig zu betrachten.
+Als Alternative zu Log Management Lösungen gibt es `stern`. Dieses Tool
+hängt sich an die Log-Streams aller einem Filter entsprechenden Container
+und gibt diese gesammelt auf der Konsole aus.
+
+```bash
+kubens kube-system
+Context "default" modified.
+Active namespace is "kube-system".
+
+stern canal  
++ canal-qrnct › calico-node
++ canal-qrnct › kube-flannel
++ canal-t7rt5 › calico-node
++ canal-t7rt5 › kube-flannel
++ canal-4kj84 › calico-node
++ canal-4kj84 › kube-flannel
+...
+```
+
+## popeye
+
+`popeye` scannt Kubernetes Cluster und gibt Empfehlungen für saubere,
+funktionale Deployments. Einfach einmal `popeye` auf der Konsole eingeben
+und schauen was empfohlen wird.
