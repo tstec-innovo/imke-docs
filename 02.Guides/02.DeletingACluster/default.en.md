@@ -5,7 +5,7 @@ published: false
 ---
 
 It's quick and simple to delete Clusters in iMKE. The
-only prerequisiste is that you need an existing Cluster
+only prerequisiste is that you need a running Cluster
 in an iMKE Project.
 
 
