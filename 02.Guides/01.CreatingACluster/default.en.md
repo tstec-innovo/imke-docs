@@ -31,7 +31,7 @@ To finish, we click on `Save`.
 
 ![Add Project Modal](addproject_modal.png?resize=600)
 
-Now iMKE creates our Project and adds it to the Overvoew. With a click on
+Now iMKE creates our Project and adds it to the Overview. With a click on
 the entry `Team Kubernetes` we enter the project and now we can create
 the cluster.
 ![Project list](projectlist.png)
