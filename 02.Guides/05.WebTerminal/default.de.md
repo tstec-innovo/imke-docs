@@ -25,10 +25,8 @@ Im folgenden wird das Web Terminal gestartet. Dies kann bis zu zwei Minuten
 dauern.
 ![Step 3](terminal_3.png)
 
-Sobald dies fertig ist können wir mit einem Klick auf `Open Web Terminal` das
-Web Terminal öffnen.
+Am Ende öffnet sich automatisch das Terminal.
 ![Step 4](terminal_4.png)
-![Step 5](terminal_5.png)
 
 ## Funktionen
 
