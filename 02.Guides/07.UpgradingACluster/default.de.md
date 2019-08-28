@@ -15,7 +15,7 @@ Infrastruktur sicher zu halten. In diesem Fall kann der nächste
 Block übersprungen werden. Nodes müssen dann nämlich dennoch
 selbst geupdated werden.
 
-## Das Cluster
+## Der Cluster
 
 In Kubernetes teilt sich die Infrastruktur in Master und Nodes.
 Bei iMKE Clustern werden die Master verwaltet, die Nodes müssen
@@ -23,12 +23,12 @@ selbst administriert werden.
 
 Da mehrere Versionen für die Master angeboten werden, hat man
 hier im Webinterface von iMKE die Wahl der Version offen. Ein
-Update der Master ist somit nur ein paar Mausklicks.
+Update der Master ist mit ein paar Mausklicks erledigt.
 
-Als erstes gehen wir in das Cluster, welches wir updaten wollen.
+Als erstes gehen wir in den Cluster, den wir updaten wollen.
 ![Step 1](update_1.png)
 
-Nun klicken wir in das Feld `Master Version` und selektieren eine
+Nun klicken wir in das Feld `Master Version` und wählen eine
 neue Version für die Master.
 ![Step 2](update_2.png)
 
@@ -39,8 +39,9 @@ diesem Schritt fertig.
 
 Nachdem die Master ihr Update vollzogen haben müssen wir nun noch
 die Nodes aktualisieren. Auch hier hilft uns das iMKE Webinterface.
-Es ist jedoch zu beachten, dass ein Update zu einem Tauschen der
-Nodes führt. Hierbei werden zwangsweise auch alle Pods neu gestartet.
+Es ist jedoch zu beachten, dass bei einem Update neue Nodes erzeugt
+und die alten Nodes gelöscht werden. Dabei werden zwangsweise auch
+alle Pods neu gestartet.
 
 Als ersten Schritt klicken wir nun auf das Node Deployment.
 ![Step 3](update_3.png)
@@ -49,7 +50,7 @@ Nun gehen wir in die Update-Ansicht.
 ![Step 4](update_4.png)
 
 Bei kubelet Version wählen wir nun die Version aus, welche auch bei
-unserem Cluster Master konfiguriert ist. In diesem Beispiel hier also
+unserem Cluster Master konfiguriert ist. In diesem Beispiel
 `1.15.3` und bestätigen mit `Edit Node Deployment`
 ![Step 5](update_5.png)
 
