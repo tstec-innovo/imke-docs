@@ -17,7 +17,8 @@ Als erstes schauen wir, wieviele Nodes im Cluster sind, und wie ihre Auslastung 
 
 Der Befehl `kubectl top node` zeigt die aktuelle Node Auslastung. Im Beispiel haben wie zwei Running (laufende) Nodes. 
 
-Erst wird der Node "cordoned" - also deaktiviert.
+Erst wird der Node "cordoned" - also deaktiviert, damit keine neuen Pods auf dem Node gestartet werden.
+
 
 ![Step 2](get_node_2.png)
 
