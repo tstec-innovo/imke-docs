@@ -28,6 +28,6 @@ Bei nur zwei Nodes wird also alles immer auf genau den einen anderen Node platzi
 Wenn der zweite Node nach dem Update wieder läuft, werden die Pods _nicht_ automatisch auf beide Nodes verteilt. Dadurch kommt es zu dem eingangs beobachteten Ungleichgewicht.
 
 ## Hier ein paar Tipps:
-Wir empfehlen mindestens drei Nodes zu verwenden, da so auch bei Updates Last besser verteilt werden kann.
+Wir empfehlen mindestens drei Nodes zu verwenden, da so auch bei Upgrades Last besser verteilt werden kann.
 Im Webterminal gibt es das Tool `popeye`, welches Hinweise auf Best Practices gibt: https://docs.imke.cloud/de/guides/webterminal.
 Upgraden Sie die Nodes auf die neueste Version und beachten Sie den letzten Schritt in folgendem Guide: https://docs.imke.cloud/de/guides/upgradingacluster.
