@@ -25,6 +25,7 @@ Dann wird der Node "drained" - also komplett leer gemacht und Pods auf alle ande
 Bei nur zwei Nodes wird also alles immer auf genau den einen anderen Node platziert.
 ![Step 3](top_node_3.png)
 
+Wenn der zweite Node nach dem Update wieder läuft, werden die Pods _nicht_ automatisch auf beide Nodes verteilt. Dadurch kommt es zu dem eingangs beobachteten Ungleichgewicht.
 
 ## Hier ein paar Tipps:
 Wir empfehlen mindestens drei Nodes zu verwenden, da so auch bei Updates Last besser verteilt werden kann.
