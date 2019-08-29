@@ -6,7 +6,7 @@ published: false
 
 Bei der Überprüfung des Clusters ist uns eine ungewöhnlich hohe Speicher-Auslastung aufgefallen.
 Wir sehen, dass ein Node komplett ausgelastet ist, während der andere nur wenig Last zeigt.
-Dies passiert oft, wenn ein Cluster mit weniger als drei Nodes ein Upgrade an den Nodes durchführt. 
+Dies passiert oft, wenn bei einem  Cluster mit weniger als drei Nodes ein Upgrade an den Nodes durchgeführt wird. 
 Hier erklären wir einmal, wie es dazu kommt.
 
 
