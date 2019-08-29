@@ -21,7 +21,7 @@ Erst wird der Node "cordoned" - also deaktiviert.
 
 ![Step 2](get_node_2.png)
 
-Dann wird der Node "drained" - also komplett leer gemacht und Pods auf alle anderen Nodes verteilt.
+Dann wird der Node "drained" - also komplett leer gemacht und die bisher auf dem gedrainten Node laufenden Pods auf alle anderen Nodes des Clusters verteilt.
 Bei nur zwei Nodes wird also alles immer auf genau den einen anderen Node platziert.
 ![Step 3](top_node_3.png)
 
