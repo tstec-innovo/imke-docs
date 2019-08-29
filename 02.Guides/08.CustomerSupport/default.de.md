@@ -12,7 +12,7 @@ Hier erklären wir einmal, wie es dazu kommt.
 
 ## Verbinden
 
-Als erstes müssen wir wissen wie viele Nodes es gibt und wie die Auslastung ist.
+Als erstes schauen wir, wieviele Nodes im Cluster sind, und wie ihre Auslastung ist.
 ![Step 1](get_top_node_1.png)
 
 Der Befehl `kubectl top node` zeigt die aktuelle Node Auslastung. Im Beispiel haben wie zwei Running (laufende) Nodes. 
