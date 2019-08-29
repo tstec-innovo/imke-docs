@@ -15,7 +15,7 @@ Hier einmal grob erklärt, was passiert.
 Als erstes müssen wir wissen wie viele Nodes es gibt und wie die Auslastung ist.
 ![Step 1](get_top_node_1.png)
 
-`Kubectl top node` zeigt die aktuelle Node Auslastung. Im Beispiel haben wie zwei Running(läuft ) Nodes. 
+Der Befehl `kubectl top node` zeigt die aktuelle Node Auslastung. Im Beispiel haben wie zwei Running (laufende) Nodes. 
 
 Erst wird der Node "cordoned" - also deaktiviert.
 
