@@ -10,7 +10,7 @@ Dies passiert oft, wenn bei einem  Cluster mit weniger als drei Nodes ein Upgrad
 Hier erklären wir einmal, wie es dazu kommt.
 
 
-## Verbinden
+## Node Auslastung
 
 Als erstes schauen wir, wieviele Nodes im Cluster sind, und wie ihre Auslastung ist.
 ![Step 1](get_top_node_1.png)
