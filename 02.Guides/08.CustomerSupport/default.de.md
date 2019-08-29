@@ -4,7 +4,7 @@ body_classes: title-center title-h1h2
 published: false
 ---
 
-Während wir das Cluster geprüft haben ist uns eine ungewöhnliche Memory-Auslastung aufgefallen.
+Bei der Überprüfung des Clusters ist uns eine ungewöhnlich hohe Speicher-Auslastung aufgefallen.
 Wir sehen, dass ein Node komplett ausgelastet ist, während der andere nur wenig Last zeigt.
 Dies passiert oft, wenn ein Cluster mit weniger als drei Nodes ein Upgrade an den Nodes durchführt. 
 Hier erklären wir einmal, wie es dazu kommt.
