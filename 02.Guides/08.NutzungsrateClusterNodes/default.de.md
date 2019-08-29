@@ -30,5 +30,5 @@ Wenn der zweite Node nach dem Update wieder läuft, werden die Pods _nicht_ auto
 
 ## Hier ein paar Tipps:
 Wir empfehlen mindestens drei Nodes zu verwenden, da so auch bei Upgrades Last besser verteilt werden kann.
-Im Webterminal gibt es das Tool `popeye`, welches Hinweise auf Best Practices gibt: https://docs.imke.cloud/de/guides/webterminal.
+Im Webterminal gibt es das Tool `popeye`, welches den Cluster analysiert und Verbesserungs-Vorschläge auf Grundlage von  Best Practices macht: https://docs.imke.cloud/de/guides/webterminal.
 Upgraden Sie die Nodes auf die neueste Version und beachten Sie den letzten Schritt in folgendem Guide: https://docs.imke.cloud/de/guides/upgradingacluster.
