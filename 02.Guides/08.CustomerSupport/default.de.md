@@ -6,7 +6,7 @@ published: false
 
 Während wir das Cluster geprüft haben ist uns eine ungewöhnliche Memory-Auslastung aufgefallen.
 Es scheint so als ob ein Node komplett ausgelastet ist, während der zweite nur wenig Last zeigt.
-Dies passiert oft, wenn ein Cluster mit weniger als drei Nodes ein Update an den Nodes durchführt. 
+Dies passiert oft, wenn ein Cluster mit weniger als drei Nodes ein Upgrade an den Nodes durchführt. 
 Hier einmal grob erklärt, was passiert.
 
 
