@@ -64,6 +64,13 @@ in:
 ![Add Cluster Step 3.1](add_step3.png)
 ![Add Cluster Step 3.2](add_step3_2.png)
 
+We can use an existing network to create the cluster. At this point, we must select the network and the subnet.
+Those must be attached to a router.
+So you have to create a router, this can be done from the optimist dashboard or from the openstack command line.
+We can use our openstack documentation to create the router and attach it. (http://docs.innovo.cloud/guided_tour/en/step10/)
+![Add Cluster Network](create-cluster-network-exist.png)
+
+
 In Node Settings we define how many virtual machines will be available as worker nodes
 in the cluster. This node deployment needs a name and a size. For the first cluster 
 the name is not super important, so we use the random name generator. We use the
@@ -71,7 +78,7 @@ defaults for the number and size of the machines.
 ![Add Cluster Step 4](add_step4.png)
 
 We choose Container Linux as the image. Container Linux is designed to run containers
-and will automatically be updated by iMKE.
+and will automatically be updated by iMKE. 
 ![Add Cluster Step 5](add_step5.png)
 
 For occassional SSH access, we need to deploy an SSH Key. For this, we click on 
