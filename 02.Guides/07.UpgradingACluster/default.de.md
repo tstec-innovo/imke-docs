@@ -18,8 +18,7 @@ selbst geupdated werden.
 ## Der Cluster
 
 In Kubernetes teilt sich die Infrastruktur in Master und Nodes.
-Bei iMKE Clustern werden die Master verwaltet, die Nodes müssen
-selbst administriert werden.
+Bei iMKE Clustern werden die Master verwaltet.
 
 Da mehrere Versionen für die Master angeboten werden, hat man
 hier im Webinterface von iMKE die Wahl der Version offen. Ein
@@ -46,7 +45,8 @@ alle Pods neu gestartet.
 Als ersten Schritt klicken wir nun auf das Node Deployment.
 ![Step 3](update_3.png)
 
-Nun gehen wir in die Update-Ansicht.
+Nun clicken wir auf dem Bleistift Symbole, um die Update-Ansicht
+aufzumachen.
 ![Step 4](update_4.png)
 
 Bei kubelet Version wählen wir nun die Version aus, welche auch bei
@@ -76,7 +76,7 @@ WebTerminal.
 ```bash
 curl -o upgrade-node.sh https://raw.githubusercontent.com/truongnh1992/playing-with-istio/master/upgrade-sidecar.sh
 chmod +x upgrade-node.sh
-sed -i '1i#!/bin/bash' upgrade-node.sh
+echo -e "#\!/bin/bash\n$(cat upgrade-node.sh)" > upgrade-node.sh
 ```
 
 Nun müssen wir nur noch dieses Script auf alle unsere Namespaces anwenden.
