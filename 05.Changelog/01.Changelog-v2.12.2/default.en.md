@@ -17,7 +17,6 @@ iMKE upgraded from v2.11.6 → v2.12.2
 
 - Kubernetes 1.16 support was added
 - Removed K8S releases affected by CVE-2019-11253
-- It is now possible to also configure automatic node updates by setting automaticNodeUpdate: true in the updates.yaml. This option implies automatic: true as node versions must not be newer than the version of the corresponding - controlplane.
 - Added possibility to add labels to projects and clusters and have these labels inherited by node objects.
 - Added support for Kubernetes audit logging
 - "Connect" button on cluster details will now open Kubernetes Dashboard
@@ -27,7 +26,6 @@ iMKE upgraded from v2.11.6 → v2.12.2
 ## Dashboard:
 
 - Kubernetes 1.13 which is end-of-life has been removed.
-- Added Swagger UI for Kubermatic API
 - Redesign dialog to manage SSH keys on cluster
 - Redesign Wizard: Summary
 - Cluster type toggle in wizard is now hidden if only one cluster type is active
