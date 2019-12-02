@@ -5,13 +5,18 @@ body_classes: title-center title-h1h2
 
 # iMKE Changelog v2.12.2
 
-iMKE upgraded from v2.11.6 → v2.12.2
+iMKE upgraded from v2.11.6 → v2.12.4
 
 ## Supported Kubernetes versions:
 
-- 1.14.8
-- 1.15.5
-- 1.16.2
+Kubernetes clusters will be upgraded as follows in order to deploy bugfixes and security fixes.
+
+v1.13.x -> v1.13.12
+v1.14.x -> v1.14.8
+v1.15.x -> v1.15.5
+
+- Customers can now create Kubernetes clusters with version v1.16.x.
+- Kubernetes 1.13 which is end-of-life has been removed.
 
 ## Major new features:
 
@@ -21,7 +26,6 @@ iMKE upgraded from v2.11.6 → v2.12.2
 - Added support for Kubernetes audit logging
 - "Connect" button on cluster details will now open Kubernetes Dashboard
 - Pod Security Policies can now be enabled
-- Added support for optional cluster addons
 
 ## Dashboard:
 
