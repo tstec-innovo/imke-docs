@@ -3,8 +3,6 @@ title: iMKE Changelog v2.12.2
 body_classes: title-center title-h1h2
 ---
 
-# iMKE Changelog v2.12.2
-
 iMKE upgraded from v2.11.6 → v2.12.4
 
 ## Supported Kubernetes versions:

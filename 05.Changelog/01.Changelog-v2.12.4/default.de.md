@@ -1,4 +1,7 @@
-# iMKE Changelog v2.12.2
+---
+title: iMKE Changelog v2.12.4
+body_classes: title-center title-h1h2
+---
 
 iMKE aktualisiert von v2.11.6 → v2.12.4
 
