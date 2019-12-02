@@ -1,5 +1,5 @@
 ---
-title: iMKE Changelog v2.12.2
+title: iMKE Changelog v2.12.4
 body_classes: title-center title-h1h2
 ---
 
@@ -10,7 +10,9 @@ iMKE upgraded from v2.11.6 → v2.12.4
 Kubernetes clusters will be upgraded as follows in order to deploy bugfixes and security fixes.
 
 v1.13.x -> v1.13.12
+
 v1.14.x -> v1.14.8
+
 v1.15.x -> v1.15.5
 
 - Customers can now create Kubernetes clusters with version v1.16.x.

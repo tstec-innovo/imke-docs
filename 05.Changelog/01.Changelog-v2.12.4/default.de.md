@@ -10,7 +10,9 @@ iMKE aktualisiert von v2.11.6 → v2.12.4
 Kubernetes-Cluster werden wie folgt aktualisiert, um Bugfixes und Sicherheitskorrekturen bereitzustellen.
 
 v1.13.x -> v1.13.12
+
 v1.14.x -> v1.14.8
+
 v1.15.x -> v1.15.5
 
 - Kunden können jetzt Kubernetes-Cluster mit Version 1.16.x erstellen.
